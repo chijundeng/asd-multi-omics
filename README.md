@@ -1,4 +1,4 @@
-# Code and Resources
+# Multi-omics dissection of lifespan neuroanatomical subtypes in autism
 The workflow integrates multiple open-source software packages and resources in the study "Multi-omics dissection of lifespan neuroanatomical subtypes in autism".
 
 ## Neuroimaging Processing and Quality Control
