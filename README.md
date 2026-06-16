@@ -88,6 +88,9 @@ The workflow integrates multiple open-source software packages and resources in 
 - Medical illustrations were obtained from **Servier Medical Art**  
   https://smart.servier.com  
   Used in schematic figures under their terms of use.
+  
+## Computation
+The computations in this paper were run on the π 2.0 (or the Siyuan-1) cluster supported by the Center for High Performance Computing at Shanghai Jiao Tong University, and the High Performance Computing Cluster of the Institute of Science and Technology for Brain-Inspired Intelligence (ISTBI) at Fudan University.
 
 ## License
 
