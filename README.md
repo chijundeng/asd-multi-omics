@@ -1,7 +1,5 @@
 # Code and Resources
-The workflow integrates multiple open-source software packages and resources spanning neuroimaging preprocessing, normative modelling, community detection, genetic analysis, statistical inference, and data visualization.
-
----
+The workflow integrates multiple open-source software packages and resources in the study "Multi-omics dissection of lifespan neuroanatomical subtypes in autism".
 
 ## Neuroimaging Processing and Quality Control
 
@@ -21,8 +19,6 @@ The workflow integrates multiple open-source software packages and resources spa
   https://github.com/Deep-MI/fsqc  
   Quality control for FreeSurfer outputs.
 
----
-
 ## Normative Modelling and Subtyping
 
 - **Lifespan BrainChart Framework**  
@@ -33,15 +29,13 @@ The workflow integrates multiple open-source software packages and resources spa
   https://github.com/GenLouvain/GenLouvain  
   Categorical multilayer community detection for subtype identification.
 
----
-
 ## Statistical and Genetic Analyses
 
 - **SciPy**  
   https://scipy.org/  
   Statistical analyses.
 
-- **PLINK 2.0**  
+- **PLINK**  
   https://www.cog-genomics.org/plink/2.0/  
   Genotype processing and quality control.
 
@@ -52,8 +46,6 @@ The workflow integrates multiple open-source software packages and resources spa
 - **PyPLS**  
   https://github.com/netneurolab/pypyls  
   Partial least squares (PLS) analysis.
-
----
 
 ## Spatial and Biological Analyses
 
@@ -68,8 +60,6 @@ The workflow integrates multiple open-source software packages and resources spa
 - **Metascape**  
   https://metascape.org  
   Functional enrichment analysis.
-
----
 
 ## Visualization
 
@@ -93,15 +83,11 @@ The workflow integrates multiple open-source software packages and resources spa
   https://amueller.github.io/word_cloud/  
   Word cloud visualization.
 
----
-
 ## Figure Resources
 
 - Medical illustrations were obtained from **Servier Medical Art**  
   https://smart.servier.com  
   Used in schematic figures under their terms of use.
-
----
 
 ## License
 
