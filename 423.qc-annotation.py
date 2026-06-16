@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon May 26 20:58:18 2025
-
 @author: Deng Chijun
 """
 
@@ -40,7 +38,7 @@ def plot_and_save_surfaces(subid, basedir, savedir):
     plt.close()
     print(f"Saved: {subid}")
 
-# ===== Main block to process all sub- folders =====
+# process all sub- folders
 root_dir = '/lustre/home/acct-medlf/medlf12/users/dengchijun/projects'
 for cohort in ['SAED', 'ABIDE/ABIDE']:
     # dir
@@ -48,7 +46,7 @@ for cohort in ['SAED', 'ABIDE/ABIDE']:
     savedir = f"{root_dir}/{cohort}/data/fsqc/annotation_agg"
     os.makedirs(savedir, exist_ok=True)
     
-    # List all subject directories starting with 'sub-'
+    # List all subject
     sub_folders = sorted([f for f in os.listdir(basedir) if f.startswith("sub-") and os.path.isdir(os.path.join(basedir, f))])
     
     for subid in sub_folders:
