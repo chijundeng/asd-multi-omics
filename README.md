@@ -103,6 +103,6 @@ The workflow integrates multiple open-source software packages and resources spa
 
 ---
 
-## Licensing
+## License
 
 This repository integrates multiple third-party open-source tools. Each component is governed by its respective license. Users should refer to the original repositories and documentation for detailed licensing information.
