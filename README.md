@@ -49,6 +49,14 @@ The workflow integrates multiple open-source software packages and resources in 
 
 ## Spatial and Biological Analyses
 
+ - **Neuromaps**  
+  https://github.com/netneurolab/neuromaps  
+  Biological annotation.
+
+- **Neurosynth**  
+  https://neurosynth.org   
+  Cognitive annotation.
+  
 - **ENIGMA Toolbox**  
   https://github.com/MICA-MNI/ENIGMA  
   Disease epicenter mapping and multimodal spatial analyses.
