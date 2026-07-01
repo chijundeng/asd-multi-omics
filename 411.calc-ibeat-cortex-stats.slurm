@@ -23,7 +23,9 @@ export FREESURFER_HOME="/lustre/home/acct-medlf/medlf12/users/dengchijun/resourc
 source "$FREESURFER_HOME/SetUpFreeSurfer.sh"
 export SUBJECTS_DIR="${OUT_DIR}"
 
-# === Copy fsaverage ONCE ===
+# === Copy fsaverage ===
+mkdir -p "${SUBJECTS_DIR}"
+
 if [ ! -d "${SUBJECTS_DIR}/fsaverage" ]; then
     cp -r "${FREESURFER_HOME}/subjects/fsaverage" "${SUBJECTS_DIR}/"
 fi
