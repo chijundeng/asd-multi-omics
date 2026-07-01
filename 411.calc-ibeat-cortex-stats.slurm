@@ -23,6 +23,11 @@ export FREESURFER_HOME="/lustre/home/acct-medlf/medlf12/users/dengchijun/resourc
 source "$FREESURFER_HOME/SetUpFreeSurfer.sh"
 export SUBJECTS_DIR="${OUT_DIR}"
 
+# === Copy fsaverage ONCE ===
+if [ ! -d "${SUBJECTS_DIR}/fsaverage" ]; then
+    cp -r "${FREESURFER_HOME}/subjects/fsaverage" "${SUBJECTS_DIR}/"
+fi
+
 # === List of Subjects ===
 subjects=$(find "${IBEAT_DIR}" -maxdepth 1 -type d -name 'sub-*' | while read -r dir; do
     count=$(find "$dir" -maxdepth 1 -type f -name '*.vtk' | wc -l)
@@ -35,8 +40,6 @@ done)
 process_subject() {
     subject=$1
     echo "[$(date)] Start processing $subject"
-
-    echo "Processing subject: $subject"
 
     # Freesurfer file structure
     mkdir -p "${SUBJECTS_DIR}/${subject}/surf"
@@ -77,9 +80,6 @@ process_subject() {
         mris_register -curv ${hemi}.sphere \
                       ${FREESURFER_HOME}/average/${hemi}.folding.atlas.acfb40.noaparc.i12.2016-08-02.tif \
                       ${hemi}.sphere.reg
-
-        # Copy fsaverage
-        cp -r ${FREESURFER_HOME}/subjects/fsaverage ${SUBJECTS_DIR}/
 
         # Annotation register
         mri_surf2surf \
